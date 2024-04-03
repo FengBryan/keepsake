@@ -1,11 +1,11 @@
 # TODO: verify protoc is installed (brew install protobuf; go install google.golang.org/protobuf/cmd/protoc-gen-go)
 # go get -u github.com/golang/protobuf/{proto,protoc-gen-go} google.golang.org/grpc
-# make sure ~/go/bin is in $PATH, but make sure ~ is expanded! ("Strangely protoc can't expand ~" https://stackoverflow.com/a/57731186/135797)
+# make sure ~/golang/bin is in $PATH, but make sure ~ is expanded! ("Strangely protoc can't expand ~" https://stackoverflow.com/a/57731186/135797)
 # pip install grpcio
 #
 # TODO: make the process of installing the proto tools and verifying installation automatic.
 
-GO_OUTPUT_DIR=../go/pkg/servicepb
+GO_OUTPUT_DIR=../golang/pkg/servicepb
 PYTHON_OUTPUT_DIR=../python/keepsake/servicepb
 PROTO_NAME=keepsake
 SERVICE_PROTO=$(PROTO_NAME).proto

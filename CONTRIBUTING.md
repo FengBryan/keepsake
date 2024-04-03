@@ -20,7 +20,7 @@ But perhaps the most useful thing you can do is **use the tool**. Join the [Disc
 
 There are three main parts to the codebase:
 
-- `go/`: This contains the `keepsake` command-line interface. It also provides a shared library that the Python library uses in `go/pkg/shared/`. The shared library runs in a standalone GRPC server in a Python subprocess.
+- `golang/`: This contains the `keepsake` command-line interface. It also provides a shared library that the Python library uses in `golang/pkg/shared/`. The shared library runs in a standalone GRPC server in a Python subprocess.
 - `python/`: This is the `keepsake` Python library. The Python package also includes the `keepsake` Go command-line interface and a Go shared library.
 - `proto/`: This defines the interface between the Go server and the Python client.
 
@@ -87,7 +87,7 @@ Run this to run the test suite:
 
     make test
 
-This will run the three test suites in the `go/`, `python/`, and `end-to-end-tests/` directories. You can also run `make test` in those directories to run the test suites individually, after running `make develop` in the root directory to install everything correctly.
+This will run the three test suites in the `golang/`, `python/`, and `end-to-end-tests/` directories. You can also run `make test` in those directories to run the test suites individually, after running `make develop` in the root directory to install everything correctly.
 
 There are also some additional tests that hit Google Cloud and AWS. You first need to be signed into the `gcloud` and `aws` CLIs, and using test project/account. Then, run:
 

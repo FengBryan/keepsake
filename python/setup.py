@@ -54,7 +54,7 @@ def copy_binaries(plat_name):
     Copy binaries for platform from ../go into current directory
     """
     this_dir = Path(__file__).resolve().parent
-    binary_path = this_dir / "../go/release" / plat_name_to_binary_path(plat_name)
+    binary_path = this_dir / "../golang/release" / plat_name_to_binary_path(plat_name)
     (this_dir / "build/bin").mkdir(parents=True, exist_ok=True)
     (this_dir / "keepsake/bin").mkdir(parents=True, exist_ok=True)
     shutil.copy(binary_path / "keepsake", this_dir / "build/bin/keepsake")

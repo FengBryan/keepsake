@@ -4,7 +4,7 @@ import sys
 
 from ._vendor.colors import color
 
-# Parallel of go/pkg/console/
+# Parallel of golang/pkg/console/
 
 
 class Level(enum.Enum):

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 // TODO: docstrings
 
-option go_package = "github.com/replicate/keepsake/go/pkg/servicepb";
+option go_package = "github.com/replicate/keepsake/golang/pkg/servicepb";
 
 package service;
 
